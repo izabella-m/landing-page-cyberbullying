@@ -58,11 +58,12 @@ export function HeroSection() {
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight text-balance"
             style={{ fontFamily: 'var(--font-outfit)' }}
           >
-            A internet não precisa ser um lugar {" "}
-            <span className="text-gradient">hostil</span>.<br />
-            Estamos aqui por{" "}
+            A violência digital deixa 
+ {" "}
+            <span className="text-gradient">marcas reais.</span>.<br />
+            Não enfrente isso{" "}
             <span className="relative">
-              <span className="text-primary">você</span>
+              <span className="text-primary">sozinho.</span>
               <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 100 12" preserveAspectRatio="none">
                 <path d="M0 8 Q 25 0, 50 8 T 100 8" stroke="currentColor" strokeWidth="3" fill="none" className="text-primary/30" />
               </svg>
