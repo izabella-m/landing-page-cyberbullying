@@ -120,7 +120,7 @@ export function ContactsSection() {
             Para onde ligar?
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Delegacias especializadas em crimes digitais e canais de denúncia em todo o Brasil
+            Delegacias especializadas em crimes digitais em Alagoas e canais de denúncia em todo o Brasil
           </p>
         </motion.div>
 

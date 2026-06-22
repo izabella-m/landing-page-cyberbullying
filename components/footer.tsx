@@ -11,7 +11,6 @@ const links = {
   apoio: [
     { href: "#apoio", label: "Rede de Apoio" },
     { href: "#contatos", label: "Contatos Úteis" },
-    { href: "#mural", label: "Mural da Paz" },
     { href: "https://safernet.org.br", label: "SaferNet Brasil", external: true },
   ],
   recursos: [

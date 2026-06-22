@@ -25,7 +25,7 @@ const supportCategories = [
         name: "CAPS - Centro de Atenção Psicossocial",
         description: "Atendimento gratuito do SUS para saúde mental",
         contact: "Busque a unidade mais próxima",
-        link: "https://www.gov.br/saude/pt-br/composicao/saes/desme/raps/caps"
+        link: "https://cidadao.saude.al.gov.br/informacoes/mapa_saude/#caps"
       },
     ]
   },
@@ -35,22 +35,22 @@ const supportCategories = [
     color: "bg-safe",
     resources: [
       {
-        name: "Defensoria Pública",
+        name: "Defensoria Pública de Alagoas",
         description: "Assistência jurídica gratuita para quem não pode pagar advogado",
-        contact: "Procure a Defensoria do seu estado",
-        link: "https://www.anadep.org.br/wtool/sitemap.html"
+        contact: "Procure locais de atendimento na sua cidade",
+        link: "https://defensoria.al.def.br/cidadao/encontre-seu-defensor?view=defensores"
       },
       {
-        name: "OAB - Ordem dos Advogados",
-        description: "Núcleos de prática jurídica com atendimento gratuito",
-        contact: "Contate a OAB do seu estado",
-        link: "https://www.oab.org.br/institucionalconselhofederal/seccionais"
+        name: "Diretório de Advogados Jusbrasil",
+        description: "Acesso fácil a advogados, leis e processos",
+        contact: "Encontre um advogado perto de você",
+        link: "https://www.jusbrasil.com.br/advogados/"
       },
       {
-        name: "Ministério Público",
-        description: "Para casos envolvendo menores ou interesse público",
-        contact: "Busque o MP do seu estado",
-        link: "https://www.cnmp.mp.br/portal/institucional/membros"
+        name: "DECCCA - Delegacia Especial dos Crimes Contra a Criança e o Adolescente",
+        description: "Para casos envolvendo menores de idade",
+        contact: "Ligue ou dirija-se até o local",
+        link: "https://maps.app.goo.gl/28ni6KYcpLZo9ZwZ9"
       },
     ]
   },
@@ -68,14 +68,14 @@ const supportCategories = [
       {
         name: "Conselho Tutelar",
         description: "Proteção de crianças e adolescentes em situação de risco",
-        contact: "Busque o Conselho da sua cidade",
-        link: "https://www.gov.br/mdh/pt-br/acesso-a-informacao/acoes-e-programas/crianca-e-adolescente"
+        contact: "Busque o Conselho mais próximo",
+        link: "https://maceio.al.gov.br/p/semdes/conselhos-tutelares"
       },
       {
         name: "Secretaria de Educação",
         description: "Denúncias sobre omissão escolar em casos de bullying",
-        contact: "Contate a Secretaria do seu estado/município",
-        link: ""
+        contact: "Contate a Secretaria",
+        link: "https://www.educacao.al.gov.br/institucional/localizacao"
       },
     ]
   },
@@ -89,18 +89,6 @@ const supportCategories = [
         description: "Referência nacional em segurança digital e combate a crimes online",
         contact: "canaldeajuda.org.br",
         link: "https://safernet.org.br"
-      },
-      {
-        name: "Instituto Brasileiro de Direito Digital",
-        description: "Pesquisa e orientação sobre direitos digitais",
-        contact: "ibddig.com.br",
-        link: "https://ibddig.com.br"
-      },
-      {
-        name: "SOS Bullying",
-        description: "Apoio e orientação para vítimas de bullying e cyberbullying",
-        contact: "sosbullying.org",
-        link: "https://sosbullying.org"
       },
     ]
   },

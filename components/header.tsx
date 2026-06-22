@@ -12,7 +12,6 @@ const navLinks = [
   { href: "#legislacao", label: "Legislação" },
   { href: "#apoio", label: "Rede de Apoio" },
   { href: "#contatos", label: "Contatos" },
-  { href: "#mural", label: "Mural da Paz" },
 ]
 
 export function Header() {
