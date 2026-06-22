@@ -43,7 +43,7 @@ export function Header() {
               <Heart className="w-4 h-4 text-secondary absolute -bottom-1 -right-1 fill-secondary" />
             </div>
             <span className="font-bold text-lg text-foreground hidden sm:block">
-              Conexão <span className="text-primary">Segura</span>
+              Cyber Acolhimento <span className="text-primary"> AL</span>
             </span>
           </Link>
 

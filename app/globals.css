@@ -1,6 +1,5 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
-@import 'shadcn/tailwind.css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -56,57 +55,57 @@
 }
 
 :root {
-  /* Tema principal - cores acolhedoras e esperançosas */
-  --background: #faf9f7;
-  --foreground: #1a1a2e;
+  /* Tema principal - paleta: azul (dominante), vermelho, verde, branco, cinza */
+  --background: #ffffff;
+  --foreground: #1f2937;
   --card: #ffffff;
-  --card-foreground: #1a1a2e;
+  --card-foreground: #1f2937;
   --popover: #ffffff;
-  --popover-foreground: #1a1a2e;
-  
-  /* Coral suave - cor principal (acolhimento) */
-  --primary: #e07a5f;
+  --popover-foreground: #1f2937;
+
+  /* Azul - cor principal (dominante, Alagoas) */
+  --primary: #1e6fd9;
   --primary-foreground: #ffffff;
-  
-  /* Verde menta - secundária (esperança) */
-  --secondary: #81b29a;
+
+  /* Vermelho - secundária (mantida como destaque) */
+  --secondary: #e53935;
   --secondary-foreground: #ffffff;
-  
-  /* Tons neutros quentes */
-  --muted: #f4f1eb;
+
+  /* Cinza - tons neutros */
+  --muted: #f3f4f6;
   --muted-foreground: #6b7280;
-  --accent: #f2cc8f;
-  --accent-foreground: #1a1a2e;
-  
+  --accent: #2e7d32;
+  --accent-foreground: #ffffff;
+
   /* Cores especiais do tema */
-  --hope: #81b29a;
+  --hope: #2e7d32;
   --hope-foreground: #ffffff;
-  --safe: #3d5a80;
+  --safe: #1e6fd9;
   --safe-foreground: #ffffff;
-  --warm: #f2cc8f;
-  --warm-foreground: #1a1a2e;
-  
-  --destructive: #ef4444;
-  --border: #e5e2db;
-  --input: #e5e2db;
-  --ring: #e07a5f;
-  
-  --chart-1: #e07a5f;
-  --chart-2: #81b29a;
-  --chart-3: #3d5a80;
-  --chart-4: #f2cc8f;
-  --chart-5: #9a8c98;
-  
+  --warm: #6b7280;
+  --warm-foreground: #ffffff;
+
+  --destructive: #e53935;
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  --ring: #1e6fd9;
+
+  --chart-1: #1e6fd9;
+  --chart-2: #e53935;
+  --chart-3: #2e7d32;
+  --chart-4: #6b7280;
+  --chart-5: #9ca3af;
+
   --radius: 1rem;
-  
-  --sidebar: #faf9f7;
-  --sidebar-foreground: #1a1a2e;
-  --sidebar-primary: #e07a5f;
+
+  --sidebar: #ffffff;
+  --sidebar-foreground: #1f2937;
+  --sidebar-primary: #1e6fd9;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #f4f1eb;
-  --sidebar-accent-foreground: #1a1a2e;
-  --sidebar-border: #e5e2db;
-  --sidebar-ring: #e07a5f;
+  --sidebar-accent: #f3f4f6;
+  --sidebar-accent-foreground: #1f2937;
+  --sidebar-border: #e5e7eb;
+  --sidebar-ring: #1e6fd9;
 }
 
 @layer base {
@@ -123,7 +122,7 @@
 
 /* Estilos customizados */
 .text-gradient {
-  background: linear-gradient(135deg, #e07a5f 0%, #81b29a 100%);
+  background: linear-gradient(135deg, #1e6fd9 0%, #e53935 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -135,7 +134,7 @@
 
 .card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px -12px rgba(224, 122, 95, 0.15);
+  box-shadow: 0 20px 40px -12px rgba(30, 111, 217, 0.18);
 }
 
 .blob-shape {
@@ -173,5 +172,5 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #c96a52;
+  background: #1758ab;
 }

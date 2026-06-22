@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { Scale, ChevronRight, BookOpen, ExternalLink } from "lucide-react"
+import { Scale, ChevronRight, BookOpen, ExternalLink, Heart } from "lucide-react"
 
 const laws = [
   {
@@ -84,6 +84,13 @@ const laws = [
     ]
   },
 ]
+
+const awarenessStats = [
+  { label: "Homens (a cada 100 mil)", value: 12.6, display: "12,6" },
+  { label: "Mulheres (a cada 100 mil)", value: 5.4, display: "5,4" },
+  { label: "Aumento entre adolescentes 15–19 anos (2016–2021)", value: 49.3, display: "49,3%" },
+]
+const maxAwarenessStat = Math.max(...awarenessStats.map((s) => s.value))
 
 export function LegislationSection() {
   const [selectedLaw, setSelectedLaw] = useState(laws[0])
@@ -194,36 +201,68 @@ export function LegislationSection() {
           </motion.div>
         </div>
 
-        {/* Card destaque da nova lei */}
+        {/* Card destaque - Setembro Amarelo / Prevenção ao Suicídio */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="mt-12 bg-gradient-to-br from-primary/10 via-secondary/5 to-safe/10 rounded-3xl p-8 md:p-10 border border-primary/20"
         >
-          <div className="flex flex-col md:flex-row md:items-center gap-6">
+          <div className="flex flex-col lg:flex-row lg:items-center gap-8">
             <div className="flex-1">
-              <span className="inline-block px-3 py-1 bg-primary/20 text-primary rounded-full text-xs font-bold mb-3">
-                NOVIDADE 2024
+              <span className="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 text-primary rounded-full text-xs font-bold mb-3">
+                <Heart className="w-3.5 h-3.5" />
+                SETEMBRO AMARELO
               </span>
               <h3 className="text-xl md:text-2xl font-bold text-foreground mb-2">
-                Cyberbullying agora é crime no Brasil
+                Prevenção ao Suicídio: se precisar, peça ajuda
               </h3>
-              <p className="text-muted-foreground">
-                A Lei 14.811/2024 inseriu o cyberbullying no Código Penal com pena de 
-                <strong className="text-primary"> 2 a 4 anos de prisão</strong>. 
-                Isso significa que agressores podem ser processados criminalmente.
+              <p className="text-muted-foreground mb-2">
+                O suicídio é um problema de saúde pública que afeta o mundo todo. No Brasil, são quase{" "}
+                <strong className="text-primary">14 mil casos por ano</strong> — em média 38 pessoas por dia.
+                Praticamente todos os casos estão ligados a doenças mentais não diagnosticadas ou mal tratadas,
+                que poderiam ter sido evitadas com acesso a tratamento adequado.
               </p>
+              <p className="text-xs text-muted-foreground mb-6">
+                10 de setembro — Dia Mundial de Prevenção ao Suicídio
+              </p>
+
+              {/* Mini gráfico de barras */}
+              <div className="space-y-3 mb-6 max-w-md">
+                {awarenessStats.map((stat) => (
+                  <div key={stat.label}>
+                    <div className="flex items-center justify-between mb-1">
+                      <span className="text-xs text-muted-foreground">{stat.label}</span>
+                      <span className="text-xs font-semibold text-foreground">{stat.display}</span>
+                    </div>
+                    <div className="w-full h-2 bg-card rounded-full overflow-hidden">
+                      <motion.div
+                        initial={{ width: 0 }}
+                        whileInView={{ width: `${(stat.value / maxAwarenessStat) * 100}%` }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        className="h-full bg-primary rounded-full"
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <a
+                href="https://www.setembroamarelo.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full font-medium hover:bg-primary/90 transition-colors whitespace-nowrap"
+              >
+                Fonte: Setembro Amarelo
+                <ExternalLink className="w-4 h-4" />
+              </a>
             </div>
-            <a
-              href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L14811.htm"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full font-medium hover:bg-primary/90 transition-colors whitespace-nowrap"
-            >
-              Ver lei completa
-              <ExternalLink className="w-4 h-4" />
-            </a>
+
+            <div className="lg:w-64 shrink-0 bg-card rounded-2xl border border-border p-6 text-center">
+              <p className="text-4xl font-bold text-primary">700 mil+</p>
+              <p className="text-sm text-muted-foreground mt-1">mortes por suicídio por ano no mundo (OMS, 2019)</p>
+            </div>
           </div>
         </motion.div>
       </div>
