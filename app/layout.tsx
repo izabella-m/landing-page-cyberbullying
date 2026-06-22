@@ -15,7 +15,7 @@ const outfit = Outfit({
 })
 
 export const metadata: Metadata = {
-  title: 'Conexão Segura | Combate ao Cyberbullying',
+  title: 'Cyber Acolhimento AL | Combate ao Cyberbullying',
   description: 'Portal educativo sobre cyberbullying: aprenda a identificar, denunciar e buscar apoio. Informações sobre legislação, delegacias especializadas e rede de apoio no Brasil.',
   generator: 'v0.app',
   keywords: ['cyberbullying', 'bullying digital', 'denúncia', 'direito digital', 'Lei 14.811/2024', 'SaferNet', 'crimes digitais'],
